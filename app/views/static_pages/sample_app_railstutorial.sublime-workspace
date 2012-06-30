@@ -12,30 +12,6 @@
 	"buffers":
 	[
 		{
-			"file": "home.html.erb",
-			"settings":
-			{
-				"buffer_size": 148,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/workspace/rails_projects/sample_app/app/views/layouts/application.html.erb",
-			"settings":
-			{
-				"buffer_size": 259,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/workspace/rails_projects/sample_app/app/helpers/application_helper.rb",
-			"settings":
-			{
-				"buffer_size": 413,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "/C/workspace/rails_projects/sample_app/spec/requests/static_pages_spec.rb",
 			"settings":
 			{
@@ -96,10 +72,14 @@
 	},
 	"file_history":
 	[
+		"/C/workspace/rails_projects/sample_app/example_user.rb",
+		"/C/workspace/rails_projects/sample_app/app/views/static_pages/home.html.erb",
+		"/C/workspace/rails_projects/sample_app/app/helpers/application_helper.rb",
+		"/C/workspace/rails_projects/sample_app/app/views/layouts/application.html.erb",
+		"/C/workspace/rails_projects/sample_app/app/controllers/static_pages_controller.rb",
 		"/C/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-		"/C/workspace/rails_projects/sample_app/app/views/static_pages/home.html.erb",
 		"/c/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/RubyTest/run_ruby_test.py",
 		"/c/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/User/RubyTest.sublime-settings",
 		"/C/workspace/rails_projects/sample_app/.rspec",
@@ -171,93 +151,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "home.html.erb",
-					"settings":
-					{
-						"buffer_size": 148,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/workspace/rails_projects/sample_app/app/views/layouts/application.html.erb",
-					"settings":
-					{
-						"buffer_size": 259,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								258,
-								258
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/workspace/rails_projects/sample_app/app/helpers/application_helper.rb",
-					"settings":
-					{
-						"buffer_size": 413,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								413,
-								413
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		},
 		{
@@ -265,7 +160,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 3,
+					"buffer": 0,
 					"file": "/C/workspace/rails_projects/sample_app/spec/requests/static_pages_spec.rb",
 					"settings":
 					{
@@ -276,8 +171,8 @@
 						"selection":
 						[
 							[
-								741,
-								741
+								201,
+								201
 							]
 						],
 						"settings":
@@ -289,7 +184,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 375.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -330,7 +225,7 @@
 		"rows":
 		[
 			0.0,
-			0.5,
+			0.509489916963,
 			1.0
 		]
 	},
