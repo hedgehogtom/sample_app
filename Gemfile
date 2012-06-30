@@ -10,11 +10,19 @@ gem 'rails', '3.2.1'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
-# RSpec for testing
+# RSpec, Capybara, etc. for testing
 group :test do
+  gem 'rspec-rails'
   gem 'capybara'
+  gem 'rb-fchange'
+  gem 'rb-notifu'
+  gem 'win32console'
+  gem 'win32-process', :require => 'win32/process'
+  # gem 'guard-spork'
+  gem 'spork'
 end
 
 # PostgreSQL for Heroku
