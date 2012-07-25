@@ -3,8 +3,7 @@ require 'spec_helper'
 describe "Static pages" do
 
   subject { page }  # 'page' is the subject of all calls to 'should'
-  let(:base_title) { "Ruby on Rails Tutorial Sample App" }
-  
+   
   describe "Home page" do
     before { visit root_path }
 
@@ -37,6 +36,17 @@ describe "Static pages" do
       text: full_title('Contact Us')) }
   end
 
+  it "should have the right links on the layout" do
+    visit root_path
+    click_link "About"
+    should have_selector 'title', text: full_title('About Us')
+    click_link "Help"
+    should have_selector 'title', text: full_title('Help')
+    click_link "Contact"
+    should have_selector 'title', text: full_title('Contact Us')
+    click_link "Home"
+    click_link "Sign up now!"
+  end
 end
 
 # require 'spec_helper'
