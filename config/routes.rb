@@ -1,6 +1,4 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
-
   #1st version of the routes file as per RailsTutorial
   #get "static_pages/home"
   #get "static_pages/help"
@@ -12,6 +10,10 @@ SampleApp::Application.routes.draw do
   match '/help', to: 'static_pages#help' # /help now valid, routes to help action in StaticPagesController
   match '/about', to: 'static_pages#about' # help_path, about_path, and contact_path now available
   match '/contact', to: 'static_pages#contact' # as is help_url, about_url, and contact_url
+
+  #New routes for signin/signup pages
+  get "users/new"
+  match '/signup', to: 'users#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
