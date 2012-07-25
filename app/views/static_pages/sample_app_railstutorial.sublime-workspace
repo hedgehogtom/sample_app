@@ -15,7 +15,7 @@
 			"file": "/C/workspace/rails_projects/sample_app/spec/requests/static_pages_spec.rb",
 			"settings":
 			{
-				"buffer_size": 1658,
+				"buffer_size": 1904,
 				"line_ending": "Unix"
 			}
 		}
@@ -23,27 +23,27 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 311.0,
+		"height": 317.0,
 		"selected_items":
 		[
 			[
-				"package",
-				"Package Control: Disable Package"
-			],
-			[
-				"install package",
-				"Package Control: Install Package"
+				"package ",
+				"Package Control: Remove Package"
 			],
 			[
 				"install pa",
 				"Package Control: Install Package"
 			],
 			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
 				"install p",
 				"Package Control: Install Package"
 			],
 			[
-				"install pack",
+				"install package",
 				"Package Control: Install Package"
 			],
 			[
@@ -51,11 +51,19 @@
 				"Package Control: Install Package"
 			],
 			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
 				"install ",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 432.0
+		"width": 458.0
 	},
 	"console":
 	{
@@ -72,14 +80,20 @@
 	},
 	"file_history":
 	[
+		"/C/workspace/rails_projects/sample_app/app/views/static_pages/sample_app_railstutorial.sublime-project",
+		"/C/workspace/rails_projects/sample_app/Gemfile",
+		"/c/workspace/rails_projects/sample_app/config/database.yml",
+		"/C/workspace/rails_projects/sample_app/config/routes.rb",
+		"/C/workspace/rails_projects/sample_app/app/views/static_pages/contact.html.erb",
+		"/C/workspace/rails_projects/sample_app/app/views/static_pages/about.html.erb",
+		"/C/workspace/rails_projects/sample_app/app/controllers/static_pages_controller.rb",
+		"/C/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/workspace/rails_projects/sample_app/example_user.rb",
 		"/C/workspace/rails_projects/sample_app/app/views/static_pages/home.html.erb",
 		"/C/workspace/rails_projects/sample_app/app/helpers/application_helper.rb",
 		"/C/workspace/rails_projects/sample_app/app/views/layouts/application.html.erb",
-		"/C/workspace/rails_projects/sample_app/app/controllers/static_pages_controller.rb",
-		"/C/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/c/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/RubyTest/run_ruby_test.py",
 		"/c/Users/Winter/AppData/Roaming/Sublime Text 2/Packages/User/RubyTest.sublime-settings",
 		"/C/workspace/rails_projects/sample_app/.rspec",
@@ -130,6 +144,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"side_bar",
+			"context_menu",
+			"ctrl+alt+space",
+			"context",
 			"rl+k\", \"c",
 			"ctrl",
 			"]\n",
@@ -164,15 +182,15 @@
 					"file": "/C/workspace/rails_projects/sample_app/spec/requests/static_pages_spec.rb",
 					"settings":
 					{
-						"buffer_size": 1658,
+						"buffer_size": 1904,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								201,
-								201
+								80,
+								80
 							]
 						],
 						"settings":
@@ -184,7 +202,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 952.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -248,6 +266,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"about.ht",
+				"app/views/static_pages/about.html.erb"
+			],
 			[
 				"",
 				"spec/requests/static_pages_spec.rb"

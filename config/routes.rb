@@ -1,8 +1,15 @@
 SampleApp::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/help"
-  get "static_pages/about"
-  get "static_pages/contact"
+  #1st version of the routes file as per RailsTutorial
+  #get "static_pages/home"
+  #get "static_pages/help"
+  #get "static_pages/about"
+  #get "static_pages/contact"
+  
+  #2nd version, i.e. REAL routes
+  root to: 'static_pages#home'
+  match '/help', to: 'static_pages#help' # /help now valid, routes to help action in StaticPagesController
+  match '/about', to: 'static_pages#about' # help_path, about_path, and contact_path now available
+  match '/contact', to: 'static_pages#contact' # as is help_url, about_url, and contact_url
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
