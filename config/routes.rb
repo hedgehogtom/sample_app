@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  get "users/new"
+
   #1st version of the routes file as per RailsTutorial
   #get "static_pages/home"
   #get "static_pages/help"
