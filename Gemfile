@@ -1,11 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
-gem 'pg'
+gem 'rails', '3.2.7'
 gem 'bootstrap-sass', '2.0.0'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'bcrypt-ruby', '3.0.1'
+gem 'pg'
 
 # Sqlite fix for Heroku
 # gem 'sqlite3'
@@ -13,6 +11,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
 end
+
+gem 'annotate', '~> 2.4.1.beta', group: :development
 
 # RSpec, Capybara, etc. for testing
 group :test do
@@ -25,11 +25,6 @@ group :test do
   # gem 'guard-spork'
   gem 'spork'
 end
-
-# PostgreSQL for Heroku [now for all environments]
-# group :production do
-  # gem 'pg'
-# end
 
 
 # Gems used only for assets and not required
@@ -45,6 +40,11 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+
+
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
