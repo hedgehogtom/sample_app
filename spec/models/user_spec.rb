@@ -14,14 +14,20 @@ require 'spec_helper'
 
 describe User do
   
-  before { @user = User.new(name: "Example User", email: "user@example.com") }
+  before do
+    @user = User.new(name: "Example User", email: "user@example.com",
+                     password: "foobar", password_confirmation: "foobar")
+  end
 
   subject { @user }
 
-  # Confirm added column correctly
+  # 0. Confirm columns are added correctly
   it { should respond_to(:name) }
   it { should respond_to(:email) }
   it { should respond_to(:password_digest) }
+  it { should respond_to(:password) }
+  it { should respond_to(:password_confirmation) }
+  it { should respond_to(:authenticate) }
 
   # TEST FOR VALIDATIONS
   # 1. Sanity check to confirm initial validity
@@ -75,6 +81,44 @@ describe User do
 
 		it { should_not be_valid }
 	end
+
+  # 6. Validate password confirmation check
+  describe "when password is not present" do
+    before { @user.password = @user.password_confirmation = " " }
+    it { should_not be_valid }
+  end
+
+  describe "when password doesn't match confirmation" do
+    before { @user.password_confirmation = "mismatch" }
+    it { should_not be_valid }
+  end
+
+  describe "when password confirmation is nil" do
+    before { @user.password_confirmation = nil }
+    it { should_not be_valid } 
+  end
+  
+  # 7. Test user authentication works
+  describe "when password is too short" do  # longer than 6 characters
+    before { @user.password = @user.password_confirmation = "a" * 5 }
+    it { should be_invalid }
+  end
+
+  describe "test the authenticate method" do
+    before { @user.save }  # enables find_by_email method
+    let(:found_user) { User.find_by_email(@user.email) }
+
+    describe "when password is valid" do
+      it { should == found_user.authenticate(@user.password) }
+    end
+
+    describe "when password is invalid" do
+      let(:user_for_invalid_password) { found_user.authenticate("invalid") }
+
+      it { should_not == user_for_invalid_password }
+      specify { user_for_invalid_password.should be_false }
+    end
+  end
 
   #pending "add some examples to (or delete) #{__FILE__}"
 end
