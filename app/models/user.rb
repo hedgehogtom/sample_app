@@ -19,7 +19,8 @@ class User < ActiveRecord::Base
 		# 4. Adds an authenticate method to compare encrypted password to password_digest
 
 	# Callbacks
-	before_save { |user| user.email = email.downcase } 
+	#before_save { |user| user.email = email.downcase }  # Alternative impl
+	before_save { self.email.downcase! }
 
 	# Validations
 	validates :name, presence: true, length: { maximum: 50 }
